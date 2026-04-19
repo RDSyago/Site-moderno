@@ -1,0 +1,234 @@
+main{
+  width: 100%;
+  height: 100vh;
+  background-color: #0d0d12; 
+
+  /* Efeito de iluminação suave no topo vindo da esquerda */
+  background-image: radial-gradient(
+    circle at 20% -10%, 
+    rgba(80, 70, 150, 0.15) 0%, 
+    transparent 40%
+  );
+  background-image: 
+    radial-gradient(circle at 20% -10%, rgba(80, 70, 150, 0.15), transparent 40%), /* Seu brilho atual */
+    repeating-linear-gradient(
+      10deg,
+      transparent,
+      transparent 20px,
+      rgba(255, 255, 255, 0.02) 21px, /* Linha quase invisível */
+      transparent 22px
+    );
+  width: 100%;
+  min-height: 100vh;
+  float: left;
+}
+.caixa{
+  width: 100%;
+  height: 5vh;
+  margin-top: 5vh;
+  display: flex;
+}
+.bola1{
+  width: 11%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 200px;
+  float: left;
+  margin-left: 2%;
+  background: radial-gradient(circle, #919194 0%, #535355 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.bola2{
+  width: 11%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 200px;
+  background: #eee9e9;
+  float: left;
+  margin-left: 74%;
+  background: radial-gradient(circle, #919194 0%, #535355 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.textos{
+  font-size: 1.6rem;
+  font-family: serif;
+  margin-top: 5vh;
+  float: left;
+  color: #5e5757;
+  margin-left: 5%;
+  color: transparent; /* Faz o interior do texto ficar vazio */
+  -webkit-text-stroke: 0.5px #d9d9da; /* Largura e cor da borda */
+}
+.tela1{
+  width: 40%;
+  height: 30vh;
+  background: linear-gradient(135deg, #3b3b7a 0%, #308d8d 50%, #5db7a1 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  float: left;
+  margin-top: 5vh;
+  margin-left: 2%;
+  border-radius: 20px;
+}
+.tela2{
+  width: 35%;
+  height: 15vh;
+  background-color: rgba(28, 28, 35, 0.7); 
+  /* O efeito de desfoque no que está atrás (vidro) */
+  backdrop-filter: blur(12px); 
+  /* Borda sutil para dar definição */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  float: left;
+  margin-left: 2%;
+  margin-top: 5vh;
+  border-radius: 20px;
+}
+.tela3{
+  width: 35%;
+  height: 15vh;
+  background-color: rgba(28, 28, 35, 0.7); 
+  /* O efeito de desfoque no que está atrás (vidro) */
+  backdrop-filter: blur(12px); 
+  /* Borda sutil para dar definição */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  float: left;
+  margin-right: 20%;
+  margin-top: 0.3vh;
+  margin-left: 2%;
+  border-radius: 20px;
+}
+.perguntas{
+  width: 95%;
+  height: 10vh;
+  /* Fundo escuro levemente mais claro que o fundo principal */
+  background-color: rgba(255, 255, 255, 0.03); 
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.07);
+  float: left;
+  margin-top: 1vh;
+  margin-left: 2%;
+  border-radius: 30px;
+}
+.tela1 button{
+  width: 95%;
+  height: 3vh;
+  float: left;
+  margin-top: 6vh;
+  margin-left: 3%;
+  border-radius: 50px;
+  background: #fffefe;
+  color: #020202;
+  font-size: large;
+  font-family: fantasy;
+  
+}
+.icone{
+  border-radius: 200px;
+  width: 25%;
+  height: auto;
+  aspect-ratio: 1/1;
+  margin-left: 5%;
+  margin-top: 2vh;
+  background: radial-gradient(circle, #919194 0%, #535355 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+}
+#icones{
+  width: 70%;
+  height: auto;
+  aspect-ratio: 1/1;
+  margin-left: 10%;
+  margin-top: 0.5vh;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.topo{
+  width: 80%;
+  height: auto;
+  aspect-ratio: 1/1;
+  float: left;
+  margin-top: 0.5vh;
+  margin-left: 6%;
+  color: #fff;
+  
+}
+.per{
+  width: 30%;
+  height: auto;
+  aspect-ratio: 1/1;
+  background: #fff;
+  border-radius: 200px;
+  margin-top: 1vh;
+  margin-left: 3%;
+  background: radial-gradient(circle, #919194 0%, #535355 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  
+}
+.dois{
+  width: 70%;
+  height: auto;
+  aspect-ratio: 1/1;
+  float: left;
+  margin-left: 8%;
+  margin-top: 0.5vh;
+  color: #fff;
+  
+}
+.telas{
+  display: flex;
+  font-family: serif;
+  font-size: 1.7rem;
+  margin-top: 4vh;
+  margin-left: 4%;
+  color: #fff;
+}
+.iconess{
+ border-radius: 200px;
+  width: 10%;
+  height: auto;
+  aspect-ratio: 1/1;
+  margin-left: 5%;
+  margin-top: 2vh;
+  background: radial-gradient(circle, #919194 0%, #535355 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  float: left;
+}
+.icones{
+  color: #fff;
+  margin-left: 15%;
+  margin-top: 0.8vh;
+  float: left;
+}
+.seta{
+  margin-left: 75%;
+  width: 25%;
+  height: auto;
+  aspect-ratio: 1/1;
+  display: flex;
+  margin-top: 5vh;
+  color: #fff;
+}
+.pequeno{
+  font-family: serif;
+  margin-top: 6vh;
+  float: left;
+  margin-left: 3%;
+  color: white;
+}
+h2{
+  font-family: serif;
+  font-size: 1.1rem;
+  float: left;
+  margin-top: 3vh;
+  color: #fff
+}
